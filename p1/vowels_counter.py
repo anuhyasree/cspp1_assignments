@@ -10,6 +10,6 @@ def main():
     for char in s_tr:
         if char in 'AEIOUaeiou':
             c_co += 1
-    print("number of vowels:" + str(c_co))
+    print(c_co)
 if __name__ == "__main__":
     main()
