@@ -34,10 +34,10 @@ def paying_debtoffinayear(balance, annual_interest_rate, montly_interest_rate):
         updated_balance_each_month1 = round(updated_bal, 2)
     return updated_balance_each_month1
 def main():
-   """def"""
-   data = input()
-   data = data.split(' ')
-   data = list(map(float, data))
-   print("Remaining balance",str(paying_debtoffinayear(data[0], data[1], data[2])))
+    """def"""
+    data = input()
+    data = data.split(' ')
+    data = list(map(float, data))
+   print("Remaining balance :",str(paying_debtoffinayear(data[0], data[1], data[2])))
 if __name__ == "__main__":
     main()
