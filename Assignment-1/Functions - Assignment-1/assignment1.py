@@ -21,13 +21,13 @@
 # Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
 # Updated balance each month =
 #(Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
-def paying_debtoffinayear(balance, annual_interest_rate, montly_interest_rate):
+def paying_debtoffinayear(balance, annual_interest_rate, montly_pay_rate):
     """def for credit card balance"""
     i = 1
     while i <= 12:
         montly_interest_rate = annual_interest_rate / 12.0
-        mini_monthly_payment = montly_interest_rate * balance
-        montly_bal = balance - mini_monthly_payment
+        min_monthly_payment = montly_pay_rate * balance
+        montly_bal = balance - min_monthly_payment
         updated_bal = montly_bal + (montly_interest_rate * montly_bal)
         balance = updated_bal
         i += 1
