@@ -22,22 +22,22 @@
 # Updated balance each month =
 #(Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 def paying_debtoffinayear(balance, annual_interest_rate, montly_interest_rate):
-   """def for credit card balance"""
-   i = 1
-   while i <= 12:
-       montly_interest_rate = annual_interest_rate / 12.0
-       mini_monthly_payment = montly_interest_rate * balance
-       montly_bal = balance - mini_monthly_payment
-       updated_bal = montly_bal + (montly_interest_rate * montly_bal)
-       balance = updated_bal
-       i += 1
-       updated_balance_each_month1 = round(updated_bal, 2)
-   return updated_balance_each_month1
+    """def for credit card balance"""
+    i = 1
+    while i <= 12:
+        montly_interest_rate = annual_interest_rate / 12.0
+        mini_monthly_payment = montly_interest_rate * balance
+        montly_bal = balance - mini_monthly_payment
+        updated_bal = montly_bal + (montly_interest_rate * montly_bal)
+        balance = updated_bal
+        i += 1
+        updated_balance_each_month1 = round(updated_bal, 2)
+    return updated_balance_each_month1
 def main():
    """def"""
    data = input()
    data = data.split(' ')
    data = list(map(float, data))
-   print("Remaining balance:",str(paying_debtoffinayear(data[0], data[1], data[2])))
+   print("Remaining balance",str(paying_debtoffinayear(data[0], data[1], data[2])))
 if __name__ == "__main__":
-   main()
+    main()
