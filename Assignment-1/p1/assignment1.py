@@ -16,6 +16,6 @@ def factorial(n_num):
 def main():
     """def"""
     a_num = input()
-    print(factorial(int(a_num)))    
+    print(factorial(int(a_num)))   
 if __name__ == "__main__":
     main()
