@@ -12,7 +12,8 @@ def sumofdigits(n_number):
         return 0
     return (n_number % 10) + sumofdigits(n_number // 10)
 def main():
-    a = input()
-    print(sumofdigits(int(a)))
+    """def"""
+    a_num = input()
+    print(sumofdigits(int(a_num)))
 if __name__ == "__main__":
     main()
