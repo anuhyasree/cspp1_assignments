@@ -11,7 +11,7 @@ def factorial(n_num):
     returns: a positive integer, the factorial of n.
     '''
     if n_num <= 1:
-        return_num 1
+        return 1
     return n_num*factorial(n_num-1)
   
 def main():
