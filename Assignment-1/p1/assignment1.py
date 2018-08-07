@@ -13,10 +13,9 @@ def factorial(n_num):
     if n_num <= 1:
         return 1
     return n_num*factorial(n_num-1)
-  
 def main():
+    """def"""
     a_num = input()
     print(factorial(int(a_num)))    
-
 if __name__ == "__main__":
     main()
