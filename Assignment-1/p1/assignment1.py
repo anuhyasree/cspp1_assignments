@@ -4,20 +4,19 @@
  factorial of given number.
  This function takes in one number and returns one number.
 """
-def factorial(n):
+def factorial(n_num):
     '''
     n is positive Integer
 
     returns: a positive integer, the factorial of n.
     '''
-    if n <= 1:
-    	return 1
-    else:
-    	return n*factorial(n-1)
+    if n_num <= 1:
+        return_num 1
+    return n_num*factorial(n_num-1)
   
 def main():
-    a = input()
-    print(factorial(int(a)))    
+    a_num = input()
+    print(factorial(int(a_num)))    
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
