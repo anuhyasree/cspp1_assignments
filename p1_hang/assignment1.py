@@ -16,8 +16,8 @@ def is_word_guessed(secret_word, letters_guessed):
     '''
     # FILL IN YOUR CODE HERE...
     for char in secret_word:
-        for char in letters_guessed:
-            secret_word = secret_word.replace(char, "")
+        for each_char in letters_guessed:
+            secret_word = secret_word.replace(each_char, "")
         if secret_word == "":
             return True
         return False
