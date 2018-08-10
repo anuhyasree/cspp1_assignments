@@ -25,11 +25,11 @@ def get_word_score(word, n):
                   's': 1, 't': 1, 'u': 1, 'v': 4,
                   'w': 4, 'x': 8, 'y': 4, 'z': 10}
     sum_0 = 0
-    letter=len(word)
+    letter = len(word)
     for j in word:
         if j in scrabble:
             sum_0 = sum_0 + scrabble[j]
-    if n == letter:
+    if i == letter:
         sum_0 = sum_0*letter
         return sum_0 + 50
    
