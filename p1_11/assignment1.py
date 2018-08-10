@@ -18,21 +18,22 @@ def get_word_score(word, n):
     n: integer (HAND_SIZE; i.e., hand size required for additional points)
     returns: int >= 0
     """
-    SCRABBLE_LETTER_VALUES = {
-    'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1,
-    'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1,
-    's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10
-    }
+    scrabble = {'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1,
+                 'f': 4, 'g': 2, 'h': 4, 'i': 1,'j': 8,
+                 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1,
+                 'p': 3, 'q': 10, 'r': 1,
+                  's': 1, 't': 1, 'u': 1, 'v': 4,
+                  'w': 4, 'x': 8, 'y': 4, 'z': 10}
     sum_0 = 0
-    L=len(word)
+    letter=len(word)
     for j in word:
-        if j in SCRABBLE_LETTER_VALUES:
-            sum_0 = sum_0 + SCRABBLE_LETTER_VALUES[j]
-    if n == L:
-        sum_0 = sum_0*L
+        if j in scrabble:
+            sum_0 = sum_0 + scrabble[j]
+    if n == letter:
+        sum_0 = sum_0*letter
         return sum_0 + 50
    
-    return sum_0 * L
+    return sum_0 * letter
 def main():
     '''
     Main function for the given problem
