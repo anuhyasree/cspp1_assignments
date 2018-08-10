@@ -29,7 +29,7 @@ def get_word_score(word, n):
     for j in word:
         if j in scrabble:
             sum_0 = sum_0 + scrabble[j]
-    if i == letter:
+    if n_new == letter:
         sum_0 = sum_0*letter
         return sum_0 + 50
    
