@@ -36,7 +36,7 @@ def create_social_network(data):
     dict = {}
     l_list = data.split("/n")
     for i in data:
-        dict = data.split("follows")
+        l_list = data.split("follows")
         dict[i[0]] = dict[i[1]]
 
     return data
