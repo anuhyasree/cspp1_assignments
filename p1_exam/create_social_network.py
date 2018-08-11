@@ -33,10 +33,10 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    d={}
+    d = {}
     d = data.split("/n")
     for i in data:
-        d.split("follows")
+        d = data.split("follows")
         d[i[0]] = d[i]
 
     return data
