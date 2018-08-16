@@ -16,7 +16,7 @@ def is_straight(hand):
     '''
     card_value = set(['--23456789TJQKA'.index(c) for c, s in hand])
     short = card_value
-    return len(short) == len(hand) and max(short)-min(short)==4
+    return len(short) == len(hand) and max(short)-min(short) == 4
 
 def is_flush(hand):
     '''
@@ -27,10 +27,10 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    suit_set = set()
-    for each_card in hand:
-        suit_set.add(each_card[1])
-    return len(suit_set) == 1
+    for i in range(0,len(hand)-1):
+        if hand[i][1] != hand[i+1][1]:
+            return False
+    return True
 
 def hand_rank(hand):
     '''
