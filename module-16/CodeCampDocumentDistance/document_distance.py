@@ -3,29 +3,29 @@
 '''
 def wordlist(input_1):
     line_1 = input_1
-    line_1 = line_1.lowercase
+    line_1 = line_1.lower()
     print (line_1)
- line_1 = line_1.replace('.','').replace('?','').replace(',','')\
-   .replace('!','').replace('1','').replace('2','').replace('3','')\
-   .replace('4','').replace('5','').replace('6','').replace('7','')\
-   .replace('8','').replace('9','').replace('0','')
-   line_1 = line_1.split(' ')
-   #print(line_1)
-   """dict reading for word count"""
-   word_freq_dict = {}
-   for word_s in line_1:
-       if word_s not in word_freq_dict:
-           word_freq_dict[word_s] = 1
-       else:
-           word_freq_dict[word_s] += 1
-   return word_freq_dict
+    line_1 = line_1.replace('.','').replace('?','').replace(',','')\
+        .replace('4','').replace('5','').replace('6','').replace('7','')\
+        .replace('!','').replace('1','').replace('2','').replace('3','')\
+        .replace('8','').replace('9','').replace('0','')
+    line_1 = line_1.split(' ')
+    #print(line_1)
+    """dict reading for word count"""
+    word_freq_dict = {}
+    for word_s in line_1:
+        if word_s not in word_freq_dict:
+            word_freq_dict[word_s] = 1
+        else:
+            word_freq_dict[word_s] += 1
+    return word_freq_dict
 
 def similarity(dict1, dict2):
    '''
        Compute the document distance as given in the PDF
    '''
-   new_dict1 = word_list(dict1)
-   new_dict2 = word_list(dict2)
+   new_dict1 = wordlist(dict1)
+   new_dict2 = wordlist(dict2)
    stop_words = load_stopwords('stopwords.txt')
    for word_s in stop_words:
        if word_s in new_dict1:
