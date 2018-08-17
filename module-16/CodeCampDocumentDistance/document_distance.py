@@ -18,6 +18,7 @@ def wordlist(input_1):
             word_freq_dict[word_s] = 1
         else:
             word_freq_dict[word_s] += 1
+    print(word_freq_dict)
     return word_freq_dict
 
 def similarity(dict1, dict2):
