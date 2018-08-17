@@ -66,7 +66,7 @@ def load_stopwords(file_name):
     stopwords = {}
     with open(file_name, 'r') as text_file:
         for line in text_file:
-          stopwords[line.strip()] = 0
+            stopwords[line.strip()] = 0
     return stopwords
 
 def main():
