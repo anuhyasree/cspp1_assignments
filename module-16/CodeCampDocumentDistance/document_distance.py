@@ -31,7 +31,7 @@ def similarity(dict1, dict2):
         if word_s in new_dict1:
            del new_dict1[word_s]
    for word_s in stop_words:
-       if word_s in new_dict2:
+        if word_s in new_dict2:
             del new_dict2[word_s]
     return new_dict1, new_dict2
 
