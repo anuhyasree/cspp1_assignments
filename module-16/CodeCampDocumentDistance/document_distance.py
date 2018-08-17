@@ -14,8 +14,8 @@ def clean_up(input_str):
     input_str = regex.sub('', input_str)
     list_of_words = input_str.split()
     for _, j in enumerate(list_of_words):
-      j = j.strip()
-      #list_of_words[each_word_index] = list_of_words[each_word_index].strip()
+        j = j.strip()
+        #list_of_words[each_word_index] = list_of_words[each_word_index].strip()
     return list_of_words
 
     #return [regex.sub('',each_word.strip())for each_word in input_string.lower().split('')]
