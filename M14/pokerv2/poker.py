@@ -54,13 +54,13 @@ def hand_rank(hand):
     hand_ranks = card_value_hand(hand)
     rank = (0, hand_ranks)
     if is_flush(hand) and is_straight(hand):
-        rank = (8,hand_ranks)
+        rank = (8,)
 
     elif kind(hand, 4):
-        rank = (7,hand_ranks)
+        rank = (7,)
 
     elif kind(hand, 3) and kind(hand, 2):
-        rank = (6,hand_ranks )
+        rank = (6, )
 
     elif is_flush(hand):
         rank = (5, hand_ranks)
