@@ -43,6 +43,7 @@ def word_list(text):
     text = regex.sub('', text)
     list_of_words = text.split("")
     print(text)
+    return list_of_words
 
 def build_search_index(docs):
     '''
