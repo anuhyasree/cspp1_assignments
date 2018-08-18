@@ -1,9 +1,6 @@
 '''
    Document Distance - A detailed description is given in the PDF
 '''
-
-
-
 import re
 import math
 
