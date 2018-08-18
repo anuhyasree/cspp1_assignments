@@ -41,9 +41,11 @@ def word_list(text):
     text = text.lower()
     regex = re.compile('[^a-z ]')
     text = regex.sub('', text)
-    list_of_words = text.split("")
-    print(text)
-    return list_of_words
+    filename = text.split("")
+    for _, j in enumerate(filename):
+        j = j.strip()
+    # print(text)
+    return filename
 
 def build_search_index(docs):
     '''
@@ -65,13 +67,13 @@ def build_search_index(docs):
 
 # helper function to print the search index
 # use this to verify how the search index looks
-# def print_search_index(index):
+def print_search_index(index):
     '''
         print the search index
     '''
-    # keys = sorted(index.keys())
-    # for key in keys:
-        # print(key, " - ", index[key])
+    keys = sorted(index.keys())
+    for key in keys:
+        print(key, " - ", index[key])
 
 # main function that loads the docs from files
 def main():
@@ -88,7 +90,7 @@ def main():
         i += 1
 
     # call print to display the search index
-    # print_search_index(build_search_index(documents))
-    word_list(documents)
+    print_search_index(build_search_index(documents))
+
 if __name__ == '__main__':
     main()
