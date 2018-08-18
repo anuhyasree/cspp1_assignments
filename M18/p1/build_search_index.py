@@ -20,6 +20,16 @@
     }
 '''
 import re
+def remove_words(list_of_words):
+    """
+          to remove the stopword
+
+    """
+    stop_words = load_stopwords('stopwords.txt')
+    for each_word in stop_words:
+        while each_word in list_of_words:
+            list_of_words.remove(each_word)
+    return list_of_words
 # helper function to load the stop words from a file
 def load_stopwords(filename):
     '''
@@ -41,11 +51,11 @@ def word_list(text):
     text = text.lower()
     regex = re.compile('[^a-z ]')
     text = regex.sub('', text)
-    filename = text.split("")
-    for _, j in enumerate(filename):
+    list_of_words = text.split("")
+    for _, j in enumerate(list_of_words):
         j = j.strip()
     # print(text)
-    return filename
+    return list_of_words
 
 def build_search_index(docs):
     '''
