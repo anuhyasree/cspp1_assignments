@@ -41,7 +41,6 @@ def search(search_index, query):
     for words in query:
         if word in search_index:
         
-
 def process_queries(search_index, queries):
     '''
         function to process the search queries
