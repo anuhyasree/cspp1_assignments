@@ -39,13 +39,13 @@ def search(search_index, query):
     '''
     query = query.lower().split(" ")
     # print(query)
-    l2=[]
+    list_word = []
     for words in query:
         if words in search_index:
             for tup in search_index[words]:
                 # print(tup)
-                l2.append(tup[0])
-    return set(l2)
+                list_word.append(tup[0])
+    return set(list_word)
 
 def process_queries(search_index, queries):
     '''
