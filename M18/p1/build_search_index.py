@@ -20,6 +20,17 @@
     }
 '''
 import re
+# helper function to load the stop words from a file
+def load_stopwords(filename):
+    '''
+        loads stop words from a file and returns a dictionary
+    '''
+    stopwords = {}
+    with open(filename, 'r') as f_stopwords:
+        for line in f_stopwords:
+            stopwords[line.strip()] = 0
+    return stopwords
+
 
 def word_list(text):
     '''
@@ -45,16 +56,6 @@ def remove_words(list_of_words):
         while each_word in list_of_words:
             list_of_words.remove(each_word)
     return list_of_words
-# helper function to load the stop words from a file
-def load_stopwords(filename):
-    '''
-        loads stop words from a file and returns a dictionary
-    '''
-    stopwords = {}
-    with open(filename, 'r') as f_stopwords:
-        for line in f_stopwords:
-            stopwords[line.strip()] = 0
-    return stopwords
 
 def build_search_index(docs):
     '''
