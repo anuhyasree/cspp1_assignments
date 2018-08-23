@@ -52,7 +52,7 @@ def read_matrix():
     row = int(line[0])
     col = int(line[1])
     matrix = []
-    for i in range(row):
+    for _ in range(row):
         line = input().split(" ")
         if len(line) == col:
             matrix.append([int(j) for j in line])
