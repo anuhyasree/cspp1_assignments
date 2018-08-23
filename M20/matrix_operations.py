@@ -35,7 +35,7 @@ def add_matrix(m1, m2):
             lst = []
             for j in range(len(m1[0])):
                 lst.append(int(m1[i][j])+int(m2[i][j]))
-            result.append
+            result.append(lst)
         return result
     else:
         print("Error: Invalid input for the matrix")
