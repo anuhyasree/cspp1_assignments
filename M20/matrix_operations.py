@@ -59,10 +59,10 @@ def main():
 
     # add matrix 1 and matrix 2
     if m1 != None and m2 != None:
-        add_matrix(m1,m2)
+        print(add_matrix(m1,m2))
 
     # multiply matrix 1 and matrix 2
-    pass
+    
 
 if __name__ == '__main__':
     main()
