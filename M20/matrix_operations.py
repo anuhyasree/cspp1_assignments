@@ -69,7 +69,7 @@ def main():
     math_1 = read_matrix()
     # print(math_1)
     # read matrix 2
-    math_2 = read_matrix()   
+    math_2 = read_matrix()
     # print(math_2)
     # add matrix 1 and matrix 2
     if math_1 is not None and math_2 is not None:
