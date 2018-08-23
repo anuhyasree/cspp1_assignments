@@ -6,7 +6,18 @@ def mult_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    pass
+    result = []
+    if len(m1) == len(m2):
+        for i in range(len(m1)):
+            lst = []
+            for j in range(len(m1[0])):
+                for k in range(m1):
+                    lst[i][j].append(int(m1[i][k])*int(m2[k][j]))
+            result.append
+        return result
+    else:
+        print("Error: Invalid input for the matrix")
+        return None
 
 def add_matrix(m1, m2):
     '''
