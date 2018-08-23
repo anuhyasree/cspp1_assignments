@@ -9,7 +9,7 @@ def mult_matrix(math_1, math_2):
     '''
     result = []
     if len(math_1) == len(math_2[0]):
-        for _ in range(len(math_1)):
+        for i in range(len(math_1)):
             lst = []
             for j in range(len(math_2[0])):
                 total = 0
@@ -31,7 +31,7 @@ def add_matrix(math_1, math_2):
     '''
     result = []
     if len(math_1) == len(math_2):
-        for _ in range(len(math_1)):
+        for i in range(len(math_1)):
             lst = []
             for j in range(len(math_1[0])):
                 lst.append(int(math_1[i][j])+int(math_2[i][j]))
@@ -52,12 +52,13 @@ def read_matrix():
     row = int(line[0])
     col = int(line[1])
     matrix = []
-    for _ in range(row):
+    for i in range(row):
         line = input().split(" ")
         if len(line) == col:
             matrix.append([int(j) for j in line])
-        print("Error: Invalid input for the matrix")
-        return None
+        else:
+            print("Error: Invalid input for the matrix")
+            return None
     return matrix
 
 def main():
