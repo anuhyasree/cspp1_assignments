@@ -64,6 +64,7 @@ def read_matrix():
     return matrix
 
 def main():
+    """ main function"""
     # read matrix 1
     math_1 = read_matrix()
     # print(math_1)
@@ -71,10 +72,10 @@ def main():
     math_2 = read_matrix()    
     # print(math_2)
     # add matrix 1 and matrix 2
-    if math_1 != None and math_2 != None:
+    if math_1 is not None and math_2 is not None:
         print(add_matrix(math_1, math_2))
     # multiply matrix 1 and matrix 2
-    if math_1 != None or math_2 != None:
+    if math_1 is not None or math_2 is not None:
         print(mult_matrix(math_1, math_2))
 if __name__ == '__main__':
     main()
