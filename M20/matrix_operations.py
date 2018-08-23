@@ -75,7 +75,7 @@ def main():
     if math_1 is not None and math_2 is not None:
         print(add_matrix(math_1, math_2))
     # multiply matrix 1 and matrix 2
-    if math_1 is not None or math_2 is not None:
+    if math_1 is not None and math_2 is not None:
         print(mult_matrix(math_1, math_2))
 if __name__ == '__main__':
     main()
