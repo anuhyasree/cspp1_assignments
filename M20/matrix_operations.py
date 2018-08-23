@@ -15,7 +15,7 @@ def mult_matrix(m1, m2):
                 for k in range(len(m2)):
                     sum += int(m1[i][k])*int(m2[k][j])
                 lst.append(sum)
-            result.append
+            result.append(lst)
         return result
     else:
         print("Error: Invalid input for the matrix")
