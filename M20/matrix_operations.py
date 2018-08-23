@@ -75,7 +75,7 @@ def main():
         print(add_matrix(m1, m2))
 
     # multiply matrix 1 and matrix 2
-    if m1 != None and m2 != None:
+    if m1 != None or m2 != None:
         print(mult_matrix(m1, m2))
     
 
