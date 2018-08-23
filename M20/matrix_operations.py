@@ -9,11 +9,11 @@ def mult_matrix(m1, m2):
     result = []
     if len(m1) == len(m2):
         for i in range(len(m1)):
-            lst = []
             for j in range(len(m1[0])):
+                lst = []
                 for k in range(m1):
                     lst[i][j].append(int(m1[i][k])*int(m2[k][j]))
-            result.append
+        result.append
         return result
     else:
         print("Error: Invalid input for the matrix")
@@ -70,7 +70,7 @@ def main():
 
     # add matrix 1 and matrix 2
     if m1 != None and m2 != None:
-        print(add_matrix(m1,m2))
+        print(add_matrix(m1, m2))
 
     # multiply matrix 1 and matrix 2
     
