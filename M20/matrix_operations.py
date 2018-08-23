@@ -18,7 +18,7 @@ def mult_matrix(m1, m2):
             result.append(lst)
         return result
     else:
-        print("Error: Invalid input for the matrix")
+        print("Error: Matrix shapes invalid for mult")
         return None
 
 def add_matrix(m1, m2):
