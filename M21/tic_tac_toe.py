@@ -83,11 +83,10 @@ def play_game(game_grid):
 
 
 def main():
-  """main"""
-  GRID_LINES = 3
-  INPUT_GRID = []
-  for _ in range(GRID_LINES):
-      INPUT_GRID.append(input().split())
-  print(play_game(INPUT_GRID))
-
+    """main"""
+    GRID_LINES = 3
+    INPUT_GRID = []
+    for _ in range(GRID_LINES):
+        INPUT_GRID.append(input().split())
+    print(play_game(INPUT_GRID))
 main()
