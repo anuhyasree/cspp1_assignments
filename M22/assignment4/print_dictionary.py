@@ -8,7 +8,7 @@ def print_dictionary(dictionary):
     keys = list[dictionary.keys()]
     keys.sort()
     for key in keys:
-    	print(key ".", dictionary(key))
+    	print(key +".", dictionary(key))
 
 def main():
     dictionary = eval(input())
