@@ -5,7 +5,7 @@ alphabets in both upper and lower case and numbers.
 import re
 def clean_string(string):
     """ revoming of special characters"""
-    regex = re.compile('[^a-z ]')
+    regex = re.compile('[^a-z 0-9]')
     string = regex.sub('',string)
     return string
 
