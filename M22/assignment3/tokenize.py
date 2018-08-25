@@ -4,10 +4,11 @@ each word
 '''
 
 def tokenize(string):
+    sequence = ''
     for _ in string:
-        string = string.split(' ')
+        sequence = string.split(' ')
     freq = {}
-    for i_i in string:
+    for i_i in sequence:
         freq[i_i] = freq.get(i_i, 0) + 1
     return freq
             
