@@ -11,7 +11,7 @@ def frequency_graph(dictionary):
     for keys in dictionary:
         temp = dictionary[keys]
         dictionary[keys] = sub(temp)
-    print(dictionary.keys())
+    print(dictionary)
 
 def main():
     dictionary = eval(input())
