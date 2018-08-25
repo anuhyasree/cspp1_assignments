@@ -8,7 +8,7 @@ def sub(temp):
         string_val = string_val + "#"
     return string_val
 def frequency_graph(dictionary):
-    for keys in range dictionary:
+    for keys in dictionary:
         temp = dictionary[keys]
         dictionary[keys] = sub(temp)
     print(dictionary)
