@@ -7,20 +7,23 @@ def print_dictionary(dictionary):
     keys = list(dictionary.keys())
     keys.sort()
     for key in keys:
-        print(key,"-",dictionary[key])
+        print(key, "-", dictionary[key])
 
 def sub(temp):
-    string_val = " "
+    """sun string"""
+    string_val = ""
     for _ in range(temp):
         string_val = string_val + "#"
     return string_val
 def frequency_graph(dictionary):
+    """frequency"""
     for keys in dictionary:
         temp = dictionary[keys]
         dictionary[keys] = sub(temp)
     print_dictionary(dictionary)
 
 def main():
+    """main"""
     dictionary = eval(input())
     frequency_graph(dictionary)
 
