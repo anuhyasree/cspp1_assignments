@@ -6,8 +6,8 @@ import re
 def clean_string(string):
     """ revoming of special characters"""
     regex = re.compile('[^a-z 0-9]')
-    string = regex.sub('',string)
-    return string
+    
+    return regex.sub('',string)
 
 def main():
     string = input()
