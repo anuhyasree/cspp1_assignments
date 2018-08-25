@@ -8,9 +8,9 @@ def tokenize(string):
     regex = re.compile('[^a-z A-Z 0-9]')
     string = regex.sub(' ', string)
     # string = string.strip()
+    for index in range(len(string)):
+        string[index] = string[index].strip() 
     sequence = string.split(' ')
-    for index in range(len(sequence)):
-        sequence[index] = sequence[index].strip() 
     freq = {}
     for i_i in sequence:
         freq[i_i] = freq.get(i_i, 0) + 1
