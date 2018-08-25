@@ -5,6 +5,7 @@ each word
 import re
 def tokenize(string):
     """ frequence"""
+    string = string.strip()
     regex = re.compile('[^a-z A-Z 0-9]')
     string = regex.sub('', string)
     # print(string)
