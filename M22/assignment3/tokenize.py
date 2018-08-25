@@ -17,7 +17,7 @@ def main():
         i += 1
         string_len += input()
         string_len += '\n'
-    print(tokenize(string))
+    print(tokenize())
 
 if __name__ == '__main__':
     main()
