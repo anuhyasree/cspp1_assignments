@@ -4,9 +4,9 @@ each word
 '''
 import re
 def tokenize(string):
-    string = string.split(' ')
     regex = re.compile('[^a-z A-Z 0-9]')
     string = regex.sub('', string)
+    string = string.split(' ')
     freq = {}
     for i_i in string:
         freq[i_i] = freq.get(i_i, 0) + 1
