@@ -6,7 +6,7 @@ import re
 def tokenize(string):
     string = string.split(' ')
     regex = re.compile('[^a-z0-9]')
-    return regex.sub('', string)
+    string = regex.sub('', string)
     freq = {}
     for i_i in string:
         freq[i_i] = freq.get(i_i, 0) + 1
