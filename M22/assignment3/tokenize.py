@@ -6,7 +6,7 @@ each word
 def tokenize(string):
     string = string.split(' ')
     freq = {}
-    for i_i in sequence:
+    for i_i in string:
         freq[i_i] = freq.get(i_i, 0) + 1
     return freq
             
