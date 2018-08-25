@@ -16,7 +16,7 @@ def main():
     for i in range(num_lines):
         i += 1
         string_len += input()
-        string_len += '\n'
+        # string_len += '\n'
     print(tokenize(string_len))
 
 if __name__ == '__main__':
