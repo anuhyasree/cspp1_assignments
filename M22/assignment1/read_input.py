@@ -3,8 +3,8 @@ Write a python program to read multiple lines of text input and store the input 
 '''
 
 def main():
-	"""main"""
-	string_len = ''
+    """main"""
+    string_len = ''
     num_lines = int(input())
     for i in range(num_lines):
         i += 1
